@@ -139,38 +139,3 @@ body {
 .summary-section .continue:hover {
     background: linear-gradient(180deg, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
 }
-/* .box:before, 
-.box:after, 
-.box>:last-child:before, 
-.box>:last-child:after {
-    position: absolute;
-    width: 10px; 
-    height: 10px;
-    border-color: black; 
-    border-style: solid;
-    border-radius: 5px;
-    content: ' ';
-}
-
-.box:before {
-    top: 10px;
-    left: 10px;
-    border-width: 1px 0 0 1px
-}
-.box:after {
-    top: 10px;
-    right: 10px;
-    border-width: 1px 1px 0 0
-}
-
-.box>:last-child:before {
-    bottom: 10px;
-    right: 10px;     
-    border-width: 0 1px 1px 0
-}
-
-.box>:last-child:after {
-    bottom: 10px;
-    left: 10px;
-    border-width: 0 0 1px 1px
-} */
