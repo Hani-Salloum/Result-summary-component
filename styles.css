@@ -1,0 +1,176 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: myFont;
+    src: url("./assets/fonts/HankenGrotesk-VariableFont_wght.ttf");
+}
+body {
+    font-family: myFont;
+}
+.container {
+    width: 650px;
+    box-shadow: 12px 12px 30px hsla(252, 100%, 67%, 0.2);
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    border-radius: 40px;
+    text-align: center;
+}
+@media (max-width: 767px) {
+    .container {
+        width: 375px;
+        flex-direction: column;
+    }
+}
+.result-section {
+    flex-basis: 50%;
+    padding: 40px 30px;
+    border-radius: 40px;
+    color: white;
+    background: linear-gradient(180deg, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    background-color: hsl(252, 100%, 67%);
+    color: hsl(241, 100%, 89%);
+}
+.result-section .title {
+    margin-bottom: 30px;
+}
+.result-section .result {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0 auto 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(180deg, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    font-size: 12px;
+    color: hsla(241, 100%, 89%, 0.5);
+}
+.result-section .result span {
+    color: white;
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 5px;
+
+}
+.result-section .status {
+    color: white;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+.result-section .info {
+    font-size: 15px;
+    line-height: 2;
+    padding: 0 20px;
+}
+.summary-section {
+    flex-basis: 50%;
+    padding: 40px 30px;
+}
+.summary-section .title {
+    text-align: left;
+    margin-bottom: 30px;
+}
+.summary-section .box {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    background-color: gainsboro;
+}
+.summary-section .box .name {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.summary-section .box .degree {
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.5);
+}
+.summary-section .box .degree span {
+    color: hsl(224, 30%, 27%);
+    font-weight: 700;
+}
+.summary-section .red {
+    background-color: hsla(0, 100%, 67%, 0.1);
+}
+.summary-section .red .name {
+    color: hsl(0, 100%, 67%);
+}
+.summary-section .yellow {
+    background-color: hsla(39, 100%, 56%, 0.1);
+}
+.summary-section .yellow .name {
+    color: hsl(39, 100%, 56%)
+}
+.summary-section .green {
+    background-color: hsla(166, 100%, 37%, 0.1);
+}
+.summary-section .green .name {
+    color: hsl(166, 100%, 37%)
+}
+.summary-section .blue {
+    background-color: hsla(234, 85%, 45%, 0.1);
+}
+.summary-section .blue .name {
+    color: hsl(234, 85%, 45%)
+}
+.summary-section .continue {
+    text-decoration: none;
+    color: white;
+    display: block;
+    width: 100%;
+    margin-top: 40px;
+    padding: 15px;
+    background-color: hsl(224, 30%, 27%);
+    border-radius: 25px;
+    transition: 0.3s;
+}
+.summary-section .continue:hover {
+    background: linear-gradient(180deg, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+/* .box:before, 
+.box:after, 
+.box>:last-child:before, 
+.box>:last-child:after {
+    position: absolute;
+    width: 10px; 
+    height: 10px;
+    border-color: black; 
+    border-style: solid;
+    border-radius: 5px;
+    content: ' ';
+}
+
+.box:before {
+    top: 10px;
+    left: 10px;
+    border-width: 1px 0 0 1px
+}
+.box:after {
+    top: 10px;
+    right: 10px;
+    border-width: 1px 1px 0 0
+}
+
+.box>:last-child:before {
+    bottom: 10px;
+    right: 10px;     
+    border-width: 0 1px 1px 0
+}
+
+.box>:last-child:after {
+    bottom: 10px;
+    left: 10px;
+    border-width: 0 0 1px 1px
+} */
